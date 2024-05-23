@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+nav {
+    background: #1b1b1b;
+    padding: 0 80px;
+}
+
+nav:after {
+    content: ' ';
+    clear: both;
+    display: table;
+}
+
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    display: visibility;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    background: #1b1b1b;
+    margin: 0 5px;
+    z-index: 1000;
+}
+
+nav ul li a {
+    color: #fffdfd;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+    z-index: 1000;
+}
+
+nav ul ul ul {
+    border-top: none;
+    z-index: 1000;
+}
+
+nav ul li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+}
+
+nav ul ul li a {
+    line-height: 50px;
+    z-index: 1000;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+    z-index: 1000;
+}
+
+.fa-plus {
+    margin-left: 15px;
+    font-size: 15px;
+    z-index: 1000;
+}
+
+.home {
+    display: flex;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    min-height: 500px;
+    padding: 0 80px;
+    z-index: 1000;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content {
+    line-height: 1;
+}
+
+.home .home-content .text-1 {
+    font-size: 3.0rem;
+    font-weight: 100;
+}
+
+.home .home-content .text-2 {
+    font-size: 7rem;
+    font-weight: 900;
+    margin-left: -3px;
+    text-transform: uppercase;
+}
+
+.home .home-content .text-3 {
+    font-size: 4.5rem;
+}
+
+.home .home-content .text-3 span {
+    color: cyan;
+    font-weight: 500;
+}
+
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}

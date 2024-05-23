@@ -1,0 +1,20 @@
+<!--Two way data binding-->
+
+Enter Id: <input type="text" [(ngModel)]="person.id" ><br>
+Enter Name: <input type="text" [(ngModel)]="person.name" ><br>
+<button (click)="submit()">Click me!</button><br>
+
+
+Id: {{person.id}} <br/>
+Name: {{person.name}} <br/>
+Age: {{person.age}} <br/>
+
+<h4><u>Address</u></h4>
+StreetNo: {{person.address.streetNo}} <br/>
+City: {{person.address.city}} <br/>
+State: {{person.address.state}} <br/> <br/>
+
+<h4><u>Hobbies</u></h4>
+<ul>
+    <li *ngFor="let hobby of person.hobbies">{{hobby}}</li>
+</ul>

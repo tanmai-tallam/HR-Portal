@@ -1,0 +1,34 @@
+<h3 align="center">Welcome {{emailId}}!</h3>
+
+<h1 align="center">ShowEmployeeById</h1>
+<div align="center">
+    Enter EmployeId: <input type="text" name="empId" [(ngModel)]="empId" /> <br/><br/>
+    <button (click)="getEmployee()"> GetEmployee </button>
+</div> <br/>
+
+<div align="center" *ngIf="employee">
+    <table class=" table-bordered">
+        <thead>
+            <tr class="text-center" class="table-primary">
+                <th>EmpId</th>
+                <th>EmpName</th>
+                <th>Salary</th>
+                <th>Gender</th>
+                <th>DOJ</th>
+                <th>Country</th>
+                <th>EmailId</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{employee.empId}}</td>
+                <td>{{employee.empName}}</td>
+                <td>{{employee.salary}}</td>
+                <td>{{employee.gender}}</td>
+                <td>{{employee.doj}}</td>
+                <td>{{employee.country}}</td>
+                <td>{{employee.emailId}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

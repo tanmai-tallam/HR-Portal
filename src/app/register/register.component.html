@@ -1,0 +1,64 @@
+<h1 align="center">Employee Registration</h1>
+
+<table align="center">
+    <tbody>
+        <tr>
+            <td align="right"> EmpId :  </td>
+            <td align="left">  <input type="text" name="empId" [(ngModel)]="employee.empId" /> </td>
+        </tr>
+        <tr>
+            <td align="right"> EmpName : </td>
+            <td align="left">  <input type="text" name="empName" [(ngModel)]="employee.empName" /> </td>
+        </tr>
+        <tr>
+            <td align="right"> Salary :</td>
+            <td align="left">  <input type="text" name="salary" [(ngModel)]="employee.salary" /> </td>
+        </tr>
+        <tr>
+            <td align="right"> Gender :</td>
+            <td align="left">  
+                <select name="gender" [(ngModel)]="employee.gender">
+                    <option value="" selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"> Date of Join :</td>
+            <td align="left">  <input type="date" name="doj" [(ngModel)]="employee.doj" /> </td>
+        </tr>
+        <tr>
+            <td align="right"> Country :</td>
+            <td align="left">  
+                <select name="country" [(ngModel)]="employee.country">
+                    <option value="" selected>Select Country</option>
+                    <option value="{{country.cca3}}" *ngFor="let country of countries">{{country.name.common}}</option>
+                    
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"> Email-ID :</td>
+            <td align="left">  <input type="text" name="emailId" [(ngModel)]="employee.emailId" /> </td>
+        </tr>
+        <tr>
+            <td align="right"> Password :</td>
+            <td align="left">  <input type="password" name="password" [(ngModel)]="employee.password" /> </td>
+        </tr>
+        <tr>
+            <td align="right"> Department :</td>
+            <td align="left">  
+                <select name="department" [(ngModel)]="employee.department.deptId">
+                    <option value="" selected>Select Department</option>
+                    <option value="{{dept.deptId}}" *ngFor="let dept of departments">{{dept.deptName}}</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"></td>
+            <td align="left">  <button (click)="register()">Register</button> </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,12 @@
+<p>test works!</p>
+<h1>Id :{{id}}</h1>
+<h1>Name :{{name}}</h1>
+<h1>Age :{{age}}</h1>
+<h1><u>Address</u></h1>
+Street No:{{address.streetNo}}<br>
+City :{{address.city}}<br>
+State :{{address.state}}
+<h3><u>Hobbies</u></h3>
+<ul>
+    <li *ngFor="let hobby of hobbies">{{hobby}}</li>
+</ul>
